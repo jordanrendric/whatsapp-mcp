@@ -1,0 +1,20 @@
+{
+  "name": "whatsapp-mcp",
+  "interface": {
+    "displayName": "Whatsapp Mcp"
+  },
+  "plugins": [
+    {
+      "name": "whatsapp-mcp",
+      "source": {
+        "source": "local",
+        "path": "./plugins/whatsapp-mcp"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

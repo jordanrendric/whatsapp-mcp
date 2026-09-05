@@ -1,0 +1,41 @@
+{
+  "name": "whatsapp-mcp",
+  "version": "0.1.0+codex.20260905000226",
+  "description": "Leia conversas do WhatsApp no macOS e transcreva áudios com Whisper local. Somente leitura.",
+  "author": {
+    "name": "Jordan Vasconcelos"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "WhatsApp MCP",
+    "shortDescription": "Conversas e áudios do WhatsApp no seu Mac.",
+    "longDescription": "Busque mensagens, leia grupos e contatos e transcreva áudios baixados com Whisper local. Acesso somente de leitura ao SQLite do WhatsApp para macOS.",
+    "developerName": "Jordan Vasconcelos",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Configure o WhatsApp MCP neste Mac, incluindo áudio local.",
+      "Busque uma mensagem no meu WhatsApp.",
+      "Resuma as mensagens recentes de um grupo.",
+      "Transcreva um áudio de uma conversa."
+    ],
+    "brandColor": "#155A49",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "logoDark": "./assets/icon.png"
+  },
+  "mcpServers": "./.mcp.json",
+  "license": "MIT",
+  "repository": "https://github.com/jordanrendric/whatsapp-mcp",
+  "homepage": "https://github.com/jordanrendric/whatsapp-mcp",
+  "keywords": [
+    "whatsapp",
+    "macos",
+    "sqlite",
+    "mcp",
+    "whisper",
+    "read-only"
+  ]
+}

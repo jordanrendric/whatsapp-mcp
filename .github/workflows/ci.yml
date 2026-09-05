@@ -1,0 +1,49 @@
+name: Synthetic tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: plugins/whatsapp-mcp
+
+concurrency:
+  group: synthetic-tests-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: macOS / Python ${{ matrix.python-version }}
+    runs-on: macos-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.14"]
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPATH: src
+      # Test fixtures provide their own database. Never discover a real account.
+      WHATSAPP_MCP_DB_PATH: /nonexistent/whatsapp-mcp-ci/ChatStorage.sqlite
+      WHATSAPP_MCP_WHISPER_MODEL: /nonexistent/whatsapp-mcp-ci/model.bin
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up uv and Python
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          version: "0.12.3"
+          python-version: ${{ matrix.python-version }}
+          enable-cache: false
+      - name: Install locked dependencies
+        run: uv sync --locked --no-dev
+      - name: Run synthetic unit and MCP protocol tests
+        run: uv run --offline --locked --no-dev --no-env-file python -m unittest discover -s tests -v

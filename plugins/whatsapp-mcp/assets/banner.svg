@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="680" viewBox="0 0 1600 680" role="img" aria-label="WhatsApp MCP. Find the message. Hear the context. macOS, read only, local Whisper.">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2=".65"><stop stop-color="#092D29"/><stop offset="1" stop-color="#101E26"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#3BCA8C" stop-opacity=".18"/><stop offset="1" stop-color="#3BCA8C" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="680" rx="28" fill="url(#background)"/>
+  <ellipse cx="1300" cy="240" rx="520" ry="470" fill="url(#glow)"/>
+  <g fill="none" stroke="#87B5A5" stroke-opacity=".07"><path d="M1070 0v680M1240 0v680M1410 0v680M900 160h700M900 330h700M900 500h700"/></g>
+  <rect x="80" y="63" width="240" height="44" rx="22" fill="#214B3F"/>
+  <text x="200" y="92" fill="#B0F6CC" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="2" text-anchor="middle">LOCAL BY DESIGN</text>
+  <text x="78" y="213" fill="#F1F8F4" font-family="Helvetica,Arial,sans-serif" font-size="75" font-weight="700" letter-spacing="-3">WhatsApp MCP</text>
+  <text x="82" y="292" fill="#B3CEC2" font-family="Helvetica,Arial,sans-serif" font-size="33" letter-spacing="-.5">Find the message. Hear the context.</text>
+  <text x="82" y="350" fill="#90ABA0" font-family="Helvetica,Arial,sans-serif" font-size="23">An independent reader for WhatsApp on macOS.</text>
+  <g font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="500" fill="#C5DBD0" text-anchor="middle">
+    <rect x="82" y="428" width="250" height="64" rx="32" fill="#1A3D34"/><text x="207" y="468">Read-only SQLite</text>
+    <rect x="350" y="428" width="218" height="64" rx="32" fill="#1A3D34"/><text x="459" y="468">Local Whisper</text>
+    <rect x="586" y="428" width="178" height="64" rx="32" fill="#1A3D34"/><text x="675" y="468">MCP tools</text>
+  </g>
+  <g transform="translate(1083 122) rotate(7 130 175)">
+    <rect x="29" y="-10" width="268" height="341" rx="32" fill="#427F64" opacity=".34"/>
+    <rect width="268" height="341" rx="32" fill="#DDEDE5"/>
+    <circle cx="44" cy="45" r="10" fill="#298767"/>
+    <path d="M71 44h89" stroke="#50796B" stroke-width="9" stroke-linecap="round"/>
+    <path d="M39 91h186M39 118h148M39 145h167" stroke="#99B6A8" stroke-width="9" stroke-linecap="round"/>
+    <rect x="22" y="186" width="282" height="125" rx="23" fill="#1F614D"/>
+    <path d="M51 241v18m29-38v58m29-83v104m29-64v32m29-59v86m29-72v53m29-41v28m29-51v75m29-48v21" stroke="#9CECBD" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <path d="M82 568h1436" stroke="#436E5E" stroke-opacity=".5"/>
+  <text x="82" y="612" fill="#8CA99B" font-family="Helvetica,Arial,sans-serif" font-size="17" letter-spacing="1">SEARCH  /  READ  /  TRANSCRIBE</text>
+  <text x="1289" y="612" fill="#8CA99B" font-family="Helvetica,Arial,sans-serif" font-size="17">BUILT FOR YOUR MAC</text>
+</svg>

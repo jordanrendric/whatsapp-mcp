@@ -1,0 +1,48 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Configuration and credentials must never enter the repository
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+
+# Personal databases, media, model weights and runtime diagnostics
+*.sqlite*
+*.db*
+*.wal
+*.shm
+*.wav
+*.opus
+*.ogg
+*.mp3
+*.m4a
+*.aac
+*.amr
+*.flac
+*.aif
+*.aiff
+*.caf
+*.mp4
+*.mov
+*.bin
+*.log
+transcripts/
+exports/
+recordings/
+
+# Build/distribution products
+build/
+dist/
+*.egg-info/
+*.zip
